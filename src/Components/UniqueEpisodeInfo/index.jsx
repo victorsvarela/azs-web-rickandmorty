@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { useQuery } from "@apollo/client";
-import { EpisodeInfo } from "../../querys";
+import { EpisodeInfo } from "../../Routes/querys";
 import { useEffect, useState } from "react";
 
 import { Card, CharactersThisEpisode, CardCharacterUnique } from "./style";
@@ -10,8 +10,6 @@ const UniqueEpisodeInfo = () => {
   const [episode, setEpisode] = useState();
   console.log(episode, id);
   const { loading, error, data } = useQuery(EpisodeInfo(id));
-  // if (loading) return "Loading...";
-  // if (error) return `Error! ${error.message}`;
 
   useEffect(() => {
     setEpisode(data?.episodesByIds?.[0]);
