@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { useQuery } from "@apollo/client";
-import { EpisodeInfo } from "../../Routes/querys";
+import { EpisodeInfo } from "../../services/querys";
 import { useEffect, useState } from "react";
 
 import { Card, CharactersThisEpisode, CardCharacterUnique } from "./style";
