@@ -4,6 +4,7 @@ import { EpisodeInfo } from "../../services/querys";
 import { useEffect, useState } from "react";
 
 import { Card, CharactersThisEpisode, CardCharacterUnique } from "./style";
+import { Link } from "react-router-dom";
 
 const UniqueEpisodeInfo = () => {
   const { id } = useParams();
@@ -17,6 +18,7 @@ const UniqueEpisodeInfo = () => {
 
   return (
     <Card>
+      <Link to="/">Voltar para Home</Link>
       <p>{episode?.name}</p>
       <p>{episode?.episode}</p>
       <p>{episode?.air_date}</p>

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import EpisodeCard from "../../Components/EpisodeCard";
 import UniqueEpisodeInfo from "../../Components/UniqueEpisodeInfo";
 
-import { Episodes } from "../../Routes/querys";
+import { Episodes } from "../../services/querys";
 import { BoxCards, Content, Wrapper } from "./style";
 
 const HomePage = () => {
